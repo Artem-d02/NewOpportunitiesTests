@@ -1,15 +1,17 @@
 ﻿#include <vector>
 #include <string>
 #include <iostream>
-#include "33.h"
+#include "39.h"
 
 int main() {
 
-	thirty_third::Solution sol;
+	thirty_ninth::Solution sol;
 
-	std::vector<std::string> input = { "-78","-33","196","+","-19","-","115","+","-","-99","/","-18","8","*","-86","-","-","16","/","26","-14","-","-","47","-","101","-","163","*","143","-","0","-","171","+","120","*","-60","+","156","/","173","/","-24","11","+","21","/","*","44","*","180","70","-40","-","*","86","132","-84","+","*","-","38","/","/","21","28","/","+","83","/","-31","156","-","+","28","/","95","-","120","+","8","*","90","-","-94","*","-73","/","-62","/","93","*","196","-","-59","+","187","-","143","/","-79","-89","+","-" };
+	thirty_ninth::TreeNode* root = new thirty_ninth::TreeNode(2);
+	root->left = new thirty_ninth::TreeNode(1);
+	root->right = new thirty_ninth::TreeNode(3);
 
-	auto res = sol.evalRPN(input);
+	auto res = sol.isValidBST(root);
 
 	auto print = [](const std::vector<std::vector<int>>& input) {
 		for (const auto& row : input) {
